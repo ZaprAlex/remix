@@ -34,7 +34,7 @@ __export(assets_manifest_exports, {
 });
 var assets_manifest_default, init_assets_manifest = __esm({
   "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { version: "691413e5", entry: { module: "/build/entry.client-2W64VSRG.js", imports: ["/build/_shared/chunk-FF2YNTUO.js", "/build/_shared/chunk-BSQJPG6F.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-BR23LNXS.js", imports: ["/build/_shared/chunk-UMMBYS3W.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-FAE7H47E.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/songs": { id: "routes/songs", parentId: "root", path: "songs", index: void 0, caseSensitive: void 0, module: "/build/routes/songs-P2Z7XRT3.js", imports: ["/build/_shared/chunk-7SZNMF2N.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/songs.$author": { id: "routes/songs.$author", parentId: "routes/songs", path: ":author", index: void 0, caseSensitive: void 0, module: "/build/routes/songs.$author-OK5AVJNW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/songs.$author.$song": { id: "routes/songs.$author.$song", parentId: "routes/songs.$author", path: ":song", index: void 0, caseSensitive: void 0, module: "/build/routes/songs.$author.$song-J7LZXVAR.js", imports: ["/build/_shared/chunk-UMMBYS3W.js", "/build/_shared/chunk-7SZNMF2N.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: "/build/css-bundle-EE5QCXNT.css", hmr: void 0, url: "/build/manifest-691413E5.js" };
+    assets_manifest_default = { version: "cc3cf4b0", entry: { module: "/build/entry.client-2W64VSRG.js", imports: ["/build/_shared/chunk-FF2YNTUO.js", "/build/_shared/chunk-BSQJPG6F.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-3HNX524D.js", imports: ["/build/_shared/chunk-UMMBYS3W.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-IEUT66JW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/songs": { id: "routes/songs", parentId: "root", path: "songs", index: void 0, caseSensitive: void 0, module: "/build/routes/songs-P2Z7XRT3.js", imports: ["/build/_shared/chunk-7SZNMF2N.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/songs.$author": { id: "routes/songs.$author", parentId: "routes/songs", path: ":author", index: void 0, caseSensitive: void 0, module: "/build/routes/songs.$author-OK5AVJNW.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/songs.$author.$song": { id: "routes/songs.$author.$song", parentId: "routes/songs.$author", path: ":song", index: void 0, caseSensitive: void 0, module: "/build/routes/songs.$author.$song-J7LZXVAR.js", imports: ["/build/_shared/chunk-UMMBYS3W.js", "/build/_shared/chunk-7SZNMF2N.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: "/build/css-bundle-W6XTMA3D.css", hmr: void 0, url: "/build/manifest-CC3CF4B0.js" };
   }
 });
 
@@ -263,7 +263,10 @@ var import_jsx_runtime5 = require("react/jsx-runtime"), Header = () => {
 
 // app/root.tsx
 var import_jsx_runtime6 = require("react/jsx-runtime"), links = () => [
-  ...import_css_bundle.cssBundleHref ? [{ rel: "stylesheet", href: import_css_bundle.cssBundleHref }] : []
+  ...import_css_bundle.cssBundleHref ? [{ rel: "stylesheet", href: import_css_bundle.cssBundleHref }, {
+    rel: "stylesheet",
+    href: "~/styles/global.css"
+  }] : [{ rel: "stylesheet", href: "~/styles/global.css" }]
 ];
 function App() {
   return /* @__PURE__ */ (0, import_jsx_runtime6.jsxs)("html", { lang: "ru", children: [
@@ -1443,8 +1446,7 @@ __export(index_exports, {
   loader: () => loader2,
   meta: () => meta3
 });
-var import_router2 = require("@remix-run/router");
-var import_jsx_runtime13 = require("react/jsx-runtime"), meta3 = () => [{ title: "Home page" }], loader2 = async () => (0, import_router2.redirect)("/songs");
+var import_router2 = require("@remix-run/router"), import_jsx_runtime13 = require("react/jsx-runtime"), meta3 = () => [{ title: "Home page" }], loader2 = async () => (0, import_router2.redirect)("/songs");
 function Index() {
   return /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("div", { style: { fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }, children: /* @__PURE__ */ (0, import_jsx_runtime13.jsx)("h1", { children: "Welcome to Songbook" }) });
 }
