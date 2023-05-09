@@ -1,0 +1,1 @@
+import{A as a,c as m,d as e,e as t,f as o,g as n,h as r}from"/build/_shared/chunk-BSQJPG6F.js";e();t();o();r();n();e();t();o();r();n();var i=m(a()),c=()=>[{title:"Home page"}];function s(){return(0,i.jsx)("div",{style:{fontFamily:"system-ui, sans-serif",lineHeight:"1.4"},children:(0,i.jsx)("h1",{children:"Welcome to Songbook"})})}export{s as default,c as meta};
